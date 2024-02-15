@@ -9,7 +9,35 @@ body {
   align-items: center;
 }
 
-#container {
+#calculator {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60%;
+  width: 20%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  margin: 10px 0;
+}
+
+.buttons {
+  border: 1px solid blue;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#output {
+  width: 75%;
+}
+
+/* #container {
   height: 60%;
   width: 20%;
   display: flex;
@@ -24,6 +52,7 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex: 1 0 auto;
 }
 
@@ -34,4 +63,4 @@ body {
   width: 22%;
   text-align: center;
   margin: auto;
-}
+} */
