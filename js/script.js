@@ -33,15 +33,46 @@ const createOutputDisplay = () => {
   });
 };
 
-const sum = () => {};
+const operate = (operand1, operand2, operator) => {
+  let result = 0;
+  
+  switch (operator) {
+    case "add":
+      result = sum(operand1, operand2);
+      break;
+    case "subtract":
+      result = subtract(operand1, operand2);
+      break;
+    case "multiply":
+      result = multiply(operand1, operand2);
+      break;
+    case "divide":
+      result = divide(operant1, operand2);
+      break;
+    default:
+      alert("uh oh! something went wrong");
+  }
 
-const subtract = () => {};
+  return result;
+};
 
-const multiply = () => {};
+const sum = (operand1, operand2) => {
+  return operand1 + operand2;
+};
 
-const divide = () => {};
+const subtract = (operand1, operand2) => {
+  return operand1 - operand2;
+};
 
-const operate = (num1, num2, operate) => {};
+const multiply = (operand1, operand2) => {
+  return operand1 * operand2;
+};
+
+const divide = (operand1, operand2) => {
+  return operand1 / operand2;
+};
+
+console.log(operate(10, 4, "add"));
 
 createOutputDisplay();
 
