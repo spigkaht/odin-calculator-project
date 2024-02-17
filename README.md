@@ -15,3 +15,9 @@ steps to produce:
 > operator pressed => += operator
 > digits pressed && operand1 => += operand2
 > equals pressed => operate()
+
+todo
+> reset display on new operand
+> fix duplicate decimal entry
+> object for status of operators, operand etc (ie is operation in progress?)
+> create event listener for equals button
