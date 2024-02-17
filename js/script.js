@@ -80,6 +80,7 @@ const equationInput = (click, equationValue) => {
       equation.operand1 += click.target.value;
     } else if (equationValue.operator === "" && click.target.classList.contains("operators")) {
       equation.operator += click.target.value;
+    }
     console.log(equationValue, click);
 };
 
