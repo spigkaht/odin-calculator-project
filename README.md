@@ -10,6 +10,8 @@ steps to produce:
 > if user clicks equals button > evaluate equation and display total
 > else continue accepting inputs // must be digits > operator > digits ..
 > evaluate each equation and display total after each operator > digit input
-> 
 
-USE ARRAY USE ARRAY FOR OPERANDS AND OPERATORS (AND RESULT)?
+> digits pressed => += operand1
+> operator pressed => += operator
+> digits pressed && operand1 => += operand2
+> equals pressed => operate()
